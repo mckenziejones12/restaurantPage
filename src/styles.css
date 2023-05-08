@@ -61,9 +61,53 @@
   margin-left: 20px;
 }
 #menuHeader {
-  font-size: 24px;
+  font-size: 28px;
+  font-family: cursive;
   color: navy;
   margin: auto;
   text-align: center;
   align-content: center;
+}
+
+#menuContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  gap: 50px;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  gap: 20px;
+  border: 5px solid burlywood;
+  border-radius: 8px;
+  padding: 30px;
+  min-width: 350px;
+  max-width: 350px;
+}
+
+.sectionHeader {
+  color: navy;
+  font-size: 20px;
+}
+
+.sectionContent {
+  color: rgba(59, 57, 57, 0.849);
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.nameDiv {
+  font-size: 16px;
+  font-weight: 600;
 }
