@@ -4,7 +4,7 @@ export const renderHomePage = (oldContent) => {
   clearPage(oldContent);
 
   const mainPic = document.createElement("img");
-  mainPic.src = "../cinnamonBreadPic.jpg";
+  mainPic.src = "./images/cinnamonBreadPic.jpg";
   mainPic.setAttribute("id", "mainPic");
 
   const description = document.createElement("div");

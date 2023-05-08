@@ -33,7 +33,7 @@ function homePageLoad() {
   tabsContainer.appendChild(contactTab);
 
   const mainPic = document.createElement("img");
-  mainPic.src = "../cinnamonBreadPic.jpg";
+  mainPic.src = "./images/cinnamonBreadPic.jpg";
   mainPic.setAttribute("id", "mainPic");
 
   const description = document.createElement("div");
