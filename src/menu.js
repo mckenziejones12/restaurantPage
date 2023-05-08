@@ -7,7 +7,7 @@ export const renderMenu = (oldContent) => {
   menuContainer.setAttribute("id", "menuContainer");
 
   const menuHeader = document.createElement("div");
-  menuHeader.setAttribute("id", "menuHeader");
+  menuHeader.setAttribute("class", "pageHeader");
   menuHeader.textContent = " Menu ";
 
   const breadContainer = document.createElement("div");

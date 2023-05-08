@@ -1,5 +1,7 @@
 import "./styles.css";
 import { renderMenu } from "./menu";
+import { renderContact } from "./contact";
+import { renderHomePage } from "./homepage";
 
 function homePageLoad() {
   const header = document.getElementById("header");
@@ -15,6 +17,7 @@ function homePageLoad() {
   homeTab.setAttribute("class", "tab");
   homeTab.setAttribute("id", "homeTab");
   homeTab.textContent = "Home";
+  homeTab.addEventListener("click", () => renderHomePage(content));
   const menuTab = document.createElement("button");
   menuTab.setAttribute("class", "tab");
   menuTab.setAttribute("id", "menuTab");
@@ -23,7 +26,8 @@ function homePageLoad() {
   const contactTab = document.createElement("button");
   contactTab.setAttribute("class", "tab");
   contactTab.setAttribute("id", "contactTab");
-  contactTab.innerText = "Contact";
+  contactTab.textContent = "Contact";
+  contactTab.addEventListener("click", () => renderContact(content));
   tabsContainer.appendChild(homeTab);
   tabsContainer.appendChild(menuTab);
   tabsContainer.appendChild(contactTab);
